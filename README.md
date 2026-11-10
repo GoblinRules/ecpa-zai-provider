@@ -22,6 +22,8 @@ Refresh the Plugin store and install **Z.ai Provider**. Existing users keep the 
 - [Shared agent tools documentation](https://github.com/GoblinRules/ecpa-plugins/blob/master/docs/agent-tools.md)
 - [Source workspace and contributing](https://github.com/GoblinRules/ecpa-plugins)
 - [Release process](https://github.com/GoblinRules/ecpa-plugins/blob/master/docs/releases.md)
+- [Public-source and release privacy audit](https://github.com/GoblinRules/ecpa-plugins/blob/master/docs/publication-security-audit.md)
+- [Central MCP runtime and Windows host setup](https://github.com/GoblinRules/ecpa-plugins/tree/master/runtime/mcp-gateway)
 
 ## Repository layout
 
@@ -39,4 +41,4 @@ Each release includes the DLL ZIP, SHA-256 checksums, `release.json` with its so
 
 Bump only `plugins/zai-provider/plugin.toml` in the source workspace, keep its runtime version and dependency metadata in sync, test, commit and push. Run **Actions → Publish plugin release** here with the full 40-character source commit SHA. The workflow builds only this plugin and publishes its version using this repository's own GitHub Actions token. No cross-repository token or token for end users is required.
 
-
+This plugin has its own version history; its version does not need to match other plugins.
